@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Осьминог — ресторан морепродуктов</title>
+  <meta name="description" content="Осьминог — элегантный ресторан морепродуктов. Свежая рыба, устрицы и авторские блюда в морской эстетике." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержанию</a>
+
+  <header id="top" class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Осьминог — на главную">
+        <span class="brand__mark" aria-hidden="true">🦑</span>
+        <span class="brand__text">Осьминог</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <button class="nav__toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__list" id="navList">
+          <li><a class="nav__link" href="#about">О ресторане</a></li>
+          <li><a class="nav__link" href="#chef">Шеф</a></li>
+          <li><a class="nav__link" href="#gallery">Галерея</a></li>
+          <li><a class="nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="cta cta--small" href="https://example.com/booking" target="_blank" rel="noopener">Заказать доставку</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-label="Вступление">
+      <div class="hero__bg" role="img" aria-label="Морская эстетика ресторана"></div>
+      <div class="container hero__inner">
+        <p class="kicker">Ресторан морепродуктов</p>
+        <h1 class="hero__title">Осьминог</h1>
+        <p class="hero__subtitle">Свежая рыба, устрицы и авторские акценты. Тихая элегантность — как отражение моря.</p>
+
+        <div class="hero__actions">
+          <a class="cta" href="https://example.com/booking" target="_blank" rel="noopener">
+            Заказать доставку
+          </a>
+          <a class="ghost" href="tel:77777777777">Позвонить нам</a>
+        </div>
+
+        <div class="hero__meta" aria-label="Краткая информация">
+          <div class="meta">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Москва · Центр</span>
+          </div>
+          <div class="meta">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+            <span>Ежедневно 12:00–23:00</span>
+          </div>
+          <div class="meta">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <a href="tel:+79990000000">+7 (999) 000‑00‑00</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container grid grid--2">
+        <div>
+          <h2 class="h2">О ресторане</h2>
+          <p class="lead">«Осьминог» — ресторан морепродуктов со вкусом к простоте и точности.</p>
+          <p>Мы выбираем сезонную рыбу, работаем с устрицами и морскими деликатесами, оставляя в центре главное — продукт, текстуру, чистый вкус.</p>
+        </div>
+        <div class="card card--image" aria-label="Фото интерьера">
+          <img src="https://saratov.travel/upload/resize_cache/iblock/654/800_800_1/7bvnaglfp60c1x2gwhroy5hvbsuzznlm.jpg" alt="Интерьер ресторана" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CHEF -->
+    <section class="section section--alt" id="chef">
+      <div class="container grid grid--2">
+        <div class="card card--image" aria-label="Фото шеф-повара">
+          <img src="https://tasty-team.ru/upload/iblock/675/67554dba11aa0202fe9d91c6820c38b9.jpg" alt="Шеф-повар" loading="lazy" />
+        </div>
+        <div>
+          <h2 class="h2">Шеф‑повар</h2>
+          <p class="lead">Кухня, в которой море звучит тихо — через соусы, огонь и баланс.</p>
+          <p>Шеф отвечает за лаконичное меню дня и фирменные подачи: гриль, сырые морепродукты и деликатные бульоны.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Галерея</h2>
+          <p class="muted">Несколько кадров — атмосфера, свет и вкус.</p>
+        </div>
+
+        <div class="gallery" aria-label="Фотографии ресторана">
+          <button class="gallery__item" type="button" data-src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=2000&q=80" aria-label="Открыть фото 1">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" alt="Морепродукты" loading="lazy" />
+          </button>
+          <button class="gallery__item" type="button" data-src="https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&w=2000&q=80" aria-label="Открыть фото 2">
+            <img src="https://images.unsplash.com/photo-1559742811-822873691df8?auto=format&fit=crop&w=1200&q=80" alt="Устрицы" loading="lazy" />
+          </button>
+          <button class="gallery__item" type="button" data-src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=2000&q=80" aria-label="Открыть фото 3">
+            <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1200&q=80" alt="Интерьер" loading="lazy" />
+          </button>
+          <button class="gallery__item" type="button" data-src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=2000&q=80" aria-label="Открыть фото 4">
+            <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1200&q=80" alt="Сервировка" loading="lazy" />
+          </button>
+          <button class="gallery__item" type="button" data-src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=2000&q=80" aria-label="Открыть фото 5">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1200&q=80" alt="Рыба на гриле" loading="lazy" />
+          </button>
+        </div>
+
+        <a class="cta" style="margin-top: 30px;" href="https://example.com/booking" target="_blank" rel="noopener">
+            Заказать доставку
+          </a>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Просмотр фото">
+        <button class="lightbox__close" type="button" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
+        <img class="lightbox__img" alt="" />
+      </div>
+    </section>
+
+    <!-- CTA END -->
+    <section class="section section--cta" aria-label="Бронирование">
+      <div class="container ctaBlock">
+        <h2 class="h2">Готовы к вечеру у моря?</h2>
+        <p class="muted">Нажмите кнопку — свяжитесь с нами</p>
+        <a class="cta cta--big" style="margin-top: 20px;" href="https://wa.me/79990000000" target="_blank" rel="noopener">
+          Написать в WhatsApp
+        </a>
+        <!-- <p class="tiny">Ссылку можно заменить на ваш сервис бронирования в одном месте: <code>https://example.com/booking</code>.</p> -->
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="section" id="contacts">
+      <div class="container grid grid--2">
+        <div>
+          <h2 class="h2">Контакты</h2>
+          <div class="contacts">
+            <div class="contacts__row">
+              <div class="contacts__label">Адрес</div>
+              <div class="contacts__value">Москва, ул. Примерная, 10</div>
+            </div>
+            <div class="contacts__row">
+              <div class="contacts__label">Телефон</div>
+              <div class="contacts__value"><a href="tel:+79990000000">+7 (999) 000‑00‑00</a></div>
+            </div>
+            <div class="contacts__row">
+              <div class="contacts__label">Режим работы</div>
+              <div class="contacts__value">Ежедневно 12:00–23:00</div>
+            </div>
+          </div>
+
+          <div class="contacts__actions">
+            <a class="ghost" href="https://wa.me/79990000000" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Написать в WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="card card--map" aria-label="Карта (заглушка)">
+          <div class="mapStub">
+            <div class="mapStub__pin"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="mapStub__text">
+              <div class="mapStub__title">Осьминог</div>
+              <div class="mapStub__muted">Вставьте карту (Google/Яндекс) вместо этого блока</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">© <span id="year"></span> Осьминог — ресторан морепродуктов</div>
+      <div class="footer__right">
+        <a href="#top" class="footer__link">Наверх</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa" href="https://wa.me/79990000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- <script src="js/main.js"></script> -->
+</body>
+</html>
